@@ -1,0 +1,521 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+li{
+  list-style: none;
+}
+img{
+  display: block;
+}
+a{
+  text-decoration: none;
+}
+body{
+	font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, "sans-serif";
+	font-size: 14px;
+	font-weight: normal;
+}
+*{
+	box-sizing: border-box;
+}
+#header{
+	margin: 0;
+	padding: 0;
+}
+#headerContainer{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: auto;
+	padding: 10px 10px 0 10px;
+}
+#logo img{
+	width: 50%;
+	height: auto;
+}
+#headerTop{
+	display: flex;
+	width: auto;
+	justify-content: flex-end;
+}
+.topMenu{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+.topMenu li::before{
+	position: absolute;
+	content: "";
+	background-color: black;
+	width: 1px;
+	height: 24px;
+}
+.topMenu li:first-child::before{
+	content: none;
+}
+.topMenu li a{
+	display: block;
+	padding: 5px 10px;
+	text-decoration: none;
+	text-align: center;
+	color: black;
+}
+.lang{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	width: auto;
+	margin-left: 20px;
+	margin-right: 10px;
+}
+.lang li::before{
+	content: "";
+	position: absolute;
+	background-color: black;
+	width: 1px;
+	height: 24px;
+}
+.lang li:first-child::before{
+	content: none;
+}
+.lang li a{
+	display: block;
+	padding: 5px 10px;
+	text-decoration: none;
+	text-align: center;
+	color: black;
+}
+#search{
+	position: relative;
+	padding: 5px;
+	height: 30px;
+}
+#searchBtn{
+	display: block;
+	width: 16px;
+	height: 16px;
+	background-image: url("/images/logo/search-line.png") no-repeat;
+	background-position: center center;
+	position: absolute;
+	right: 17px;
+	top: 16px;
+}
+#headerBottom{
+	margin-top: 40px;
+}
+.bottomMenu{
+	display: flex;
+	width: auto;
+	justify-content: flex-end;
+}
+.bottomMenu li::before{
+	content: "";
+	position: absolute;
+	background-color: black;
+	width: 1px;
+	height: 34px;
+}
+.bottomMenu li:first-child::before{
+	content: none;
+}
+.bottomMenu li a{
+	display: block;
+	padding: 10px 20px;
+	text-decoration: none;
+	text-align: center;
+	color: black;
+}
+nav{
+	background-color: #2B6788;
+}
+#gnav-lists{
+	width: 1060px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	justify-content: space-between;
+}
+.gnav-list{
+	position: relative;
+	transition: all 0.5s 0s ease;
+}
+.gnav-list::before{
+	content: "";
+	position: absolute;
+	background-color: #fff;
+	width: 1px;
+	height: 50px;
+}
+.gnav-list:first-child::before{
+	content: none;
+}
+.gnav-list a{
+	display: block;
+	position: relative;
+	padding: 11px 40.2px;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	font-size: 18px;
+}
+.gnav-list:hover{
+	background-color: #64a0c1;
+}
+.dropdown-lists{
+	display: none;
+	width: max-content;
+	position: absolute;
+	top: 49px;
+	left: 0;
+	z-index: 10;
+}
+.gnav-list:hover .dropdown-lists{
+	display: block;
+}
+.dropdown-list{
+	background-color: #153445;
+	transition: all 0.5s 0s ease;
+	position: relative;
+}
+.dropdown-list a{
+	color: #fff;
+	position: relative;
+}
+.dropdown-list a:hover{
+	color: #64a0c1;
+}
+
+/* ここからトップページ */
+main{
+	width: 1060px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#mainContainer{
+	padding: 30px 10px 10px 10px;
+}
+#mainImg{
+	display: block;
+	padding: 10px;
+	opacity: 1;
+}
+#mainImg:hover{
+	opacity: 0.7;
+}
+#info h2{
+	text-align: center;
+	text-decoration: none;
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+.infoTitle{
+	display: flex;
+	width: 640px;
+	margin: 0px auto 40px auto;
+	justify-content: space-between;
+	border-bottom: 2px solid #000000;
+	text-align: center;
+}
+.infoTitle li a{
+	display: block;
+	color: #000000;
+	border-radius: 10px 10px 0 0;
+	background-color: #BCD5E3;
+	padding: 5px 60px;
+}
+.infoTitle li a:hover{
+	background-color: #2b6788;
+	color: #fff;
+}
+.infoContainer{
+	display: flex;
+	width: 1060px;
+	margin: 0px auto 40px auto;
+	justify-content: space-between;
+}
+.infoContainer li{
+	opacity: 1;
+}
+.infoContainer li:hover{
+	opacity: 0.7;
+}
+.infoPhoto img{
+	max-width: 330px;
+}
+.infoContainer li a{
+	display: block;
+	padding: 10px;
+	color: #000;
+}
+.infoGenre{
+	display: block;
+	padding: 5px;
+}
+.infoDESCR{
+	padding: 0px 0px 10px 0px;
+}
+.infoDate{
+	display: block;
+	text-align: end;
+}
+#events h2{
+	text-align: center;
+	text-decoration: none;
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+.eventsContainer{
+	display: flex;
+	width: 1060px;
+	margin: 0px auto 50px auto;
+	justify-content: space-between;
+}
+.eventsContainer li{
+	opacity: 1;
+}
+.eventsContainer li:hover{
+	opacity: 0.7;
+}
+.eventsContainer li a{
+	display: block;
+	padding: 10px;
+	color: #000;
+}
+.eventsGenre{
+	display: block;
+	padding: 5px 0px;
+}
+.eventsDESCR{
+	padding: 0px 0px 10px 0px;
+}
+.eventsDate{
+	display: block;
+	text-align: end;
+}
+
+/* ここから「学部・大学院」ページ */
+.Container{
+	padding-top: 20px;
+}
+#subImg-1{
+	position: relative;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	height: 300px;
+	background-color: #D0E3E3;
+}
+#subImg-1 img{
+	width: 1060px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	position: relative;
+}
+.pageTitle{
+	width: 340px;
+	height: 150px;
+	background-color: #2B6788;
+	position: relative;
+	margin-top: -100px;
+	margin-left: 30px;
+}
+#title1 h1{
+	padding: 56px 78px;
+	color: #fff;
+	font-size: 30px;
+	font-weight: 400;
+}
+.gakubuinTitle{
+	padding-top: 60px;
+	padding-bottom: 10px;
+    width: 1060px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 30px;
+	position: relative;
+	border-bottom: 2px solid #000;
+}
+.facultyLists{
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	width: 1060px;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	padding: 30px;
+}
+.facultyList{
+	margin: 10px 7px;
+	width: 23%;
+	padding: 15px;
+	text-align: center;
+	border: solid 1px #000;
+	position: relative;
+	opacity: 1;
+}
+.facultyList:hover{
+	opacity: 0.7;
+}
+.facultyList a{
+	font-size: 20px;
+	color: #000;
+}
+.facultyList a::after{
+	position: absolute;
+	content: "\f054";
+	font-family: "Font Awesome 6 Free";
+	font-weight: 900;
+	font-size: 20px;
+	color: #000;
+	right: 15px;
+	top: 18px;
+}
+.inList{
+	margin: 10px 7px;
+	width: 23%;
+	padding: 15px;
+	text-align: center;
+	border: solid 1px #000;
+	position: relative;
+	opacity: 1;
+}
+.inList:hover{
+	opacity: 0.7;
+}
+.inList a{
+	font-size: 20px;
+	color: #000;
+}
+.inList a::after{
+	position: absolute;
+	content: "\f054";
+	font-family: "Font Awesome 6 Free";
+	font-weight: 900;
+	font-size: 20px;
+	color: #000;
+	right: 15px;
+	top: 18px;
+}
+/* ここから「留学・国際交流」ページ */
+#subImg-2{
+	position: relative;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	height: 300px;
+	background-color: #D0E3E3;
+}
+#subImg-2 img{
+	width: 1060px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	position: relative;
+}
+#title2 h1{
+	padding: 53px 65px;
+	color: #fff;
+	font-size: 30px;
+	font-weight: 400;
+}
+.ryugakuTitle{
+	padding-top: 60px;
+	padding-bottom: 5px;
+    width: 1060px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 20px;
+	position: relative;
+	border-bottom: 2px solid #000;
+}
+#ryugakusei_intro{
+	padding: 20px;
+	font-size: 16px;
+}
+#ryugakusei_intro a{
+	color: #000;
+	opacity: 1;
+}
+#ryugakusei_intro a:hover{
+	opacity: 0.7;
+}
+.ryugakuLists{
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	width: 1060px;
+	justify-content: space-between;
+	padding: 20px;
+}
+.ryugakuList{
+	margin: 10px 7px;
+	width: 23%;
+	padding: 15px;
+	text-align: center;
+	border: solid 1px #000;
+	position: relative;
+	opacity: 1;
+}
+.ryugakuList:hover{
+	opacity: 0.7;
+}
+.ryugakuList a{
+	color: #000;
+	font-size: 16px;
+}
+.ryugakuList a::after{
+	position: absolute;
+	content: "\f054";
+	font-family: "Font Awesome 6 Free";
+	font-weight: 900;
+	font-size: 16px;
+	color: #000;
+	right: 15px;
+	top: 18px;
+}
+
+/* ここからフッター */
+footer{
+	margin-top: 200px;
+	background-color: #2b6788;
+}
+#footerContainer{
+	padding: 50px 50px 70px 50px;
+	border-bottom: 2px solid #FFF;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+#footerInfo{
+	color: #fff;
+	font-size: 12px;
+}
+.footerMenuT{
+	display: flex;
+	width: 100%;
+	margin: 0px auto 10px auto;
+	justify-content: space-between;
+}
+.footerMenuT li a{
+	padding: 0px 10px;
+	color: #fff;
+}
+.footerMenuB{
+	display: flex;
+	width: 100%;
+	margin: 0px auto 10px auto;
+	justify-content: flex-start;
+}
+.footerMenuB li a{
+	padding: 0px 10px;
+	color: #fff;
+}
+#copyRight{
+	padding: 50px 50px 40px 50px;
+	text-align: center;
+	font-size: 12px;
+	color: #fff;
+	font-weight: lighter;
+}
