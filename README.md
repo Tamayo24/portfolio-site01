@@ -18,6 +18,9 @@
 ・Illustrator CC 2023<br>
 ・Adobe XD CC 2023<br>
 ・Visual Studio Code<br>
+<br>
+<b>参考</b><br>
+・デザインは主に広島大学（<a href="https://www.hiroshima-u.ac.jp">https://www.hiroshima-u.ac.jp</a>）、長崎大学（<a href="https://www.nagasaki-u.ac.jp">https://www.nagasaki-u.ac.jp</a>）を参考に作成。<br>
 ・画像はUnsplash（<a href="https://unsplash.com/ja">https://unsplash.com/ja</a>）、Pixabay（<a href="https://pixabay.com">https://pixabay.com</a>）いらすとや（<a href ="https://www.irasutoya.com">https://www.irasutoya.com</a>）を使用
 <br>
 <b>開発言語</b><br>
