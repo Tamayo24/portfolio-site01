@@ -95,7 +95,7 @@ body{
 	display: block;
 	width: 16px;
 	height: 16px;
-	background-image: url("/images/logo/search-line.png") no-repeat;
+	background-image: url("https://github.com/Tamayo24/portfolio-site01/blob/main/images/logo/search-line.png?raw=true") no-repeat;
 	background-position: center center;
 	position: absolute;
 	right: 17px;
